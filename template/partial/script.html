@@ -1,0 +1,27 @@
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/build/js/vendor.min.js"></script>
+<script src="/build/js/app.js"></script>
+<script>
+  /*$('.menu__1depth').click(function() {
+    $(this).find('.gnb__icon').toggleClass('gnb__icon__plus');
+  });*/
+
+  $('.gnb__ul > li').click(function() {
+    if ( $(this).hasClass('active') ) {
+      $(this).find('.gnb__sub__ul').stop().slideUp(300);
+      $(this).find('.gnb__icon').removeClass('active');
+      $(this).removeClass('active');
+    }
+    else {
+      $('.gnb__sub__ul').stop().slideUp(300);
+      $(this).find('.gnb__sub__ul').stop().slideDown(300);
+      $(this).find('.gnb__icon').addClass('active');
+      $(this).addClass('active');
+    }
+  });
+  /** 뒤로가기 버튼 */
+  $('[data-target="backBtn"]').click(function() {
+    window.history.back();
+  });
+
+</script>

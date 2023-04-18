@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./partial/head-meta.html')
+<body>
+<!-- Start: Preloader -->
+@@include('./partial/preloader.html')
+<!-- End : Preloader -->
+
+<!-- Start: 사이드 메뉴 -->
+@@include('./partial/side-menu.html', {
+  "pages": "main",
+  "nav": ""
+})
+<!-- End : 사이드 메뉴 -->
+
+<div id="main">
+  <div class="backdrop-color"></div>
+  <section>
+    <div class="main-intro">
+      <div>
+        <p class="intro-title"><span>VAL</span>VE,
+          <span>BE R</span>enovate<br /> <span>S</span>pecailized</p>
+        <p class="intro-text">This is an unusual paragraph.<br />
+          I'm curious how quickly you can find out what is so unusual<br />
+          about it? It looks so plain you would think nothing was wrong<br />
+          with it! In fact, nothing is wrong with it! It is unusual though.<br/>
+          Study it, and think about it, but you still may not find anything odd.<br />
+          Try to do so without any coaching!</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+@@include('./partial/script.html')
+</body>
+</html>
