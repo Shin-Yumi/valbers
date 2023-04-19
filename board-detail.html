@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+@@include('./partial/head-meta.html')
+<body>
+<!-- Start: Preloader -->
+@@include('./partial/preloader.html')
+<!-- End : Preloader -->
+
+<!-- Start: header -->
+@@include('./partial/side-menu.html', {
+"pages": "",
+"nav": ""
+})
+<!-- End: header -->
+
+<div class="board-detail">
+  <div class="detail-header">
+    <div class="detail-date">
+      <i class="icon-text"></i>
+      <p class="mb-0 detail-text"><span>작성일</span> : 2021.09.11</p>
+    </div>
+    <h1 class="detail-title mb-0">[공지사항] 개인정보 처리방침 변경안내</h1>
+    <div class="detail-info">
+      <p class="detail-author mb-0 detail-text"><span>작성자</span> : Valbers</p>
+      <div class="detail-views">
+        <i class="icon-views"></i>
+        <p class="detail-text mb-0"><span>조회수 </span> : 5</p>
+      </div>
+    </div>
+    <hr class="valbers-bar">
+  </div>
+  <div class="detail-contents">
+    <div class="contents-inner">
+      <div class="contents-area">
+      <pre class="contents-text mb-0">
+        게시판 내용
+      </pre>
+      </div>
+      <div class="contents-download">
+        <i class="icon-download"></i>
+        <p class="download-file detail-text mb-0"><span>다운로드 : </span><a href="#">첨부파일명</a></p>
+      </div>
+    </div>
+
+    <hr class="valbers-bar">
+  </div>
+  <div class="board-button">
+    <button type="button" class="back-list__btn fix">
+      <div class="btn-wrap">
+        <span class="btn-text">수정하기</span>
+      </div>
+    </button>
+    <button type="button" class="back-list__btn" data-target="backBtn">
+      <div class="btn-wrap">
+        <span class="btn-text">목록으로</span>
+      </div>
+    </button>
+  </div>
+</div>
+@@include('./partial/script.html')
+<script>
+  document.write("<table>")
+  axios.post('http://localhost:3000/board')
+    .then(function (response) {
+
+    })
+    .catch(function (error) {
+      // 에러 핸들링
+      console.log(error);
+    })
+    .then(function () {
+      // 항상 실행되는 영역
+    });
+  document.write(" </table> ")
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+@@include('./partial/head-meta.html')
+<body>
+<!-- Start: Preloader -->
+@@include('./partial/preloader.html')
+<!-- End : Preloader -->
+
+<!-- Start: header -->
+@@include('./partial/side-menu.html', {
+"pages": "",
+"nav": ""
+})
+<!-- End: header -->
+
+<div class="board-detail write">
+  <div class="notice-header">
+    <div class="header-icon">
+      <i class="notice-icon"></i>
+    </div>
+    <h3 class="notice-title">글쓰기</h3>
+  </div>
+  <div class="detail-contents">
+    <div class="contents-inner">
+      <div class="contents-area">
+        <form>
+          <div class="detail-form">
+            <span class="write-label mb-0">제목</span>
+            <input class="write-area input" type="text" id="name">
+          </div>
+          <div class="detail-form">
+            <span class="write-label mb-0">내용</span>
+            <textarea class="write-area text-area" id="story" name="story"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="contents-download">
+        <span class="write-label mb-0">첨부파일</span>
+        <input type="file">
+      </div>
+    </div>
+
+    <hr class="valbers-bar">
+  </div>
+  <div class="board-button">
+    <button type="button" class="save-btn">
+      <div class="btn-wrap">
+        <span class="btn-text">저장</span>
+      </div>
+    </button>
+  </div>
+</div>
+@@include('./partial/script.html')
+</body>
+</html>

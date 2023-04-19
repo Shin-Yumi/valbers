@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./partial/head-meta.html')
+<body>
+<!-- Start: Preloader -->
+@@include('./partial/preloader.html')
+<!-- End: Preloader -->
+
+<!-- Start: header -->
+@@include('./partial/side-menu.html', {
+  "pages": "",
+  "nav": ""
+})
+<!-- End: header -->
+
+<main id="about">
+    <section class="page-contents-inner">
+
+       <section class="about-area">
+          <div class="about-wrap">
+             <header class="about-header">
+                <p class="intro-title mb-0"><span>a</span>bout</p>
+                <h1 class="about-title mb-0">valbers</h1>
+                <p class="sub-title">VALve,BE Renovate & Specialized</p>
+             </header>
+             <div class="about-body">
+                <div>
+                   <p class="about-text mb-0">
+                      가장 최적화된 미래를 예측하고<br/>
+                      더욱 특별한 밸브 장치를 개발 및 판매하는 브랜드<br/>
+                      유체의 유량, 압력 등을 분석하며<br/>
+                      밸브를 이용한 체계적이고 정교한 콘트롤을 할 수 있는 밸버스는<br/>
+                      <br/>
+                      VALve 밸브의 독보적인 브랜드로<br/>
+                      BE 우리의 존재의 가치를<br/>
+                      Renovate 주저하지 않는 과감한 변화와<br/>
+                      Specialized 특별함으로 보여주고 있습니다.<br/>
+                      지금, VALBERS 밸버스는<br/>
+                      밸브의 새로운 도약을 준비하고 있습니다.
+                   </p>
+                </div>
+             </div>
+          </div>
+          <div class="about-img__wrap">
+             <figure class="about-figure mb-0">
+                <img src="/assets/img/2.jpg" alt="">
+             </figure>
+          </div>
+       </section>
+       <section class="map-area">
+          <div class="map-body">
+             <div class="map-header-area">
+                <header class="map-header">
+                   <p class="map-intro-title mb-0"><span>M</span>ap</p>
+                   <p class="map-intro-text">
+                      경기도 부천시 장말로 289, B1층 B-2호 (심곡동)<br/>
+                      [Tel] 010.9894.4860 [Fax] 032.670.8402
+                   </p>
+                </header>
+             </div>
+             <div class="map-kakao">
+                <!-- * 카카오맵 - 지도퍼가기 -->
+                <!-- 1. 지도 노드 -->
+                <div id="daumRoughmapContainer1657773203714" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                <!--
+                  2. 설치 스크립트
+                  * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                -->
+                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                <!-- 3. 실행 스크립트 -->
+                <script charset="UTF-8">
+                  new daum.roughmap.Lander({
+                    "timestamp" : "1657773203714",
+                    "key" : "2aygp",
+                    "mapWidth" : "640",
+                    "mapHeight" : "360"
+                  }).render();
+                </script>
+             </div>
+
+          </div>
+       </section>
+    </section>
+</main>
+
+@@include('./partial/footer.html')
+@@include('./partial/script.html')
+</body>
+</html>

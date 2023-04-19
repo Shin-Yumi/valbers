@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+@@include('./partial/head-meta.html')
+<body>
+<!-- Start: Preloader -->
+@@include('./partial/preloader.html')
+<!-- End: Preloader -->
+
+<main id="login" class="login">
+  <div class="login-container">
+    <section class="login-section">
+      <div class="login-area">
+        <form class="login-form">
+          <div class="login__input-box login">
+            <input class="login-input" type="text" placeholder="ID">
+          </div>
+          <div class="login__input-box password">
+            <input class="login-input" type="password" placeholder="Password">
+          </div>
+        </form>
+        <div class="login-btn">
+          <button type="button" class="btn-box">
+            <span class="btn-text">log in</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+@@include('./partial/script.html')
+</body>
+</html>
